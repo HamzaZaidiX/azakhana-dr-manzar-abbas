@@ -239,7 +239,7 @@ const EventsSection = () => {
 
                 <div className="flex items-center justify-between">
                   <a
-                    href="https://www.facebook.com/imambargah4/"
+                    href={event.image}
                     className="islamicButton w-full mr-5 text-islamic-black dark:text-white"
                   >
                     View Event
@@ -271,3 +271,4 @@ const EventsSection = () => {
 };
 
 export default EventsSection;
+
