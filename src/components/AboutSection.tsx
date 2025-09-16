@@ -45,8 +45,8 @@ const AboutSection = () => {
         </h2>
 
         <div className="flex flex-col md:flex-row gap-8 items-center">
-          <div className="md:w-1/2">
-            <div className="relative w-[500px] h-[600px] mx-auto group overflow-hidden select-none cursor-default">
+          <div className="w-full md:w-1/2">
+            <div className="relative w-full h-[400px] md:w-[500px] md:h-[600px] mx-auto group overflow-hidden ">
               {aboutImages.map((image, index) => (
                 <div
                   key={index}
@@ -83,7 +83,7 @@ const AboutSection = () => {
           </div>
 
           <div className="md:w-1/2 items-start text-left">
-            <div className="rtl-text mr-4 fontFamily-urdu urdu-text">
+            <div className="rtl-text mr-0 md:mr-4 fontFamily-urdu urdu-text" style={{ letterSpacing: '1px' }}>
               <p className="text-xl font-bold mb-2 justify">
                 سنہ 1952 سے قائم عزاخانہ جس کی بنیاد ڈاکٹر سید منظر عباس زیدی
                 صاحب نے رکھی۔ اس عزاخانہ کو ان کے نام سے ہی منسوب کردیا گیا ہے۔
@@ -130,32 +130,32 @@ const AboutSection = () => {
                 نشر کی جائیں گی۔
               </p>
             </div>
-          </div>
-        </div>
-        <div className="flex flex-wrap justify-center ml-[500px] gap-6 md:gap-8 mt-5">
-          <a
-            href="https://www.facebook.com/imambargah4"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col items-center hover:opacity-80 transition-opacity group"
-            aria-label="Facebook"
-          >
-            <div className="bg-white dark:text-white text-islamic-black dark:bg-islamic-gray dark:text-white dark:hover:bg-islamic-red p-4 hover:bg-islamic-blue rounded-full mb-2 transform transition-transform group-hover:scale-110">
-              <Facebook size={28} />
-            </div>
-          </a>
+            <div className="flex flex-wrap justify-center gap-6 md:gap-8 mt-5">
+              <a
+                href="https://www.facebook.com/imambargah4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center hover:opacity-80 transition-opacity group"
+                aria-label="Facebook"
+              >
+                <div className="bg-white dark:text-white text-islamic-black dark:bg-islamic-gray dark:text-white dark:hover:bg-islamic-red p-4 hover:bg-islamic-blue rounded-full mb-2 transform transition-transform group-hover:scale-110">
+                  <Facebook size={28} />
+                </div>
+              </a>
 
-          <a
-            href="https://www.youtube.com/@azakhana_manzarabbas/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col items-center hover:opacity-80 transition-opacity group"
-            aria-label="YouTube"
-          >
-            <div className="bg-white dark:text-white text-islamic-black dark:bg-islamic-gray dark:text-white dark:hover:bg-islamic-red hover:bg-islamic-blue p-4 rounded-full mb-2 transform transition-transform group-hover:scale-110">
-              <Youtube size={28} />
+              <a
+                href="https://www.youtube.com/@azakhana_manzarabbas/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center hover:opacity-80 transition-opacity group"
+                aria-label="YouTube"
+              >
+                <div className="bg-white dark:text-white text-islamic-black dark:bg-islamic-gray dark:text-white dark:hover:bg-islamic-red hover:bg-islamic-blue p-4 rounded-full mb-2 transform transition-transform group-hover:scale-110">
+                  <Youtube size={28} />
+                </div>
+              </a>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>
@@ -163,4 +163,5 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
 
