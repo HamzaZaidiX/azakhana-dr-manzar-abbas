@@ -145,7 +145,7 @@ const Carousel = () => {
       </div>
 
       {/* Caption */}
-     <div className="absolute bottom-4 w-full px-16 md:px-0 md:w-auto text-center md:text-right right-4 text-white font-semibold dark:text-islamic-gold text-sm sm:text-xs z-20 select-none">
+     <div className="absolute bottom-4 w-full px-16 md:px-0 md:w-auto text-center md:text-right right-4 text-white font-semibold dark:text-islamic-gold text-sm sm:text-xs sm:line-clamp-3 z-20 select-none">
         <p>{images[current].caption}</p>
       </div>
     </div>
