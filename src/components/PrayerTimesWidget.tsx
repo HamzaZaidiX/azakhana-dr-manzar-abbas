@@ -119,7 +119,7 @@ const PrayerTimesWidget: React.FC = () => {
           ))}
         </ul>
 
-        <ul className="divide-y divide-border mt-3">
+        <ul className="divide-y divide-border mt-3"></ul>
       </div>
     </div>
   );
