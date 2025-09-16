@@ -5,12 +5,12 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden geometric-pattern dark:bg-islamic-black/95 dark:bg-blend-overlay select-non cursor-default"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden geometric-pattern dark:bg-islamic-black/95 dark:bg-blend-overlay select-none cursor-default"
     >
       <div className="absolute inset-0 z-0">
         <Carousel />
       </div>
-      <div className="relative z-10 container mx-auto px-4 py-12 text-center pointer-events-none">
+      <div className="relative z-10 container mx-auto px-4 py-12 text-center select-none pointer-events-none cursor-default">
         <div className="max-w-2xl mx-auto">
           <div className="mx-auto mb-8 w-64 md:w-80 animate-fade-in">
             {/* Light logo */}
@@ -33,7 +33,7 @@ const Hero = () => {
           {/* <h1 className="text-3xl md:text-5xl font-bold text-islamic-black dark:text-white mb-6 font-playfair">
             Azakhana Dr. Manzar Abbas Zaidi
           </h1> */}
-          <p className="text-xl font-semibold md:text-2xl text-white dark:text-islamic-gold mb-8">
+          <p className="text-xl font-semibold md:text-2xl text-islamic-gold dark:text-white mb-8">
             سنہ 1952 سے قائم امام بارگاہ و عزاخانہ جس کی بنیاد ڈاکٹر سید منظر
             عباس زیدی صاحب نے رکھی۔
           </p>
