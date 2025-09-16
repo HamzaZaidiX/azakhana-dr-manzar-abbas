@@ -79,7 +79,7 @@ const PrayerTimesWidget: React.FC = () => {
   }
 
   return (
-    <div className="fixed bottom-6 right-6 w-80 z-50 overflow-hidden rounded-lg shadow-lg border bg-card text-card-foreground">
+    <div className="fixed bottom-6 right-6 w-80 z-50 overflow-hidden rounded-lg shadow-lg border bg-card text-card-foreground select-none cursor-default">
       <div className="p-4 text-primary-foreground bg-primary flex justify-between items-center">
         <h3 className="text-lg font-semibold flex items-center">
           <Clock className="w-6 h-6 mr-3" /> Prayer Times
@@ -108,7 +108,7 @@ const PrayerTimesWidget: React.FC = () => {
               className="flex items-center justify-between py-2"
             >
               <span className="font-semibold text-lg">{prayer.name}</span>
-              <span className="text-green-500 dark:text-islamic-gold font-semibold text-lg">
+              <span className="text-gray-600 dark:text-islamic-gold font-semibold text-lg">
                 {new Date(`1970-01-01T${prayer.time}`).toLocaleTimeString([], {
                   hour: "2-digit",
                   minute: "2-digit",
@@ -119,11 +119,7 @@ const PrayerTimesWidget: React.FC = () => {
           ))}
         </ul>
 
-        <div className="mt-4 text-center">
-          <a href="#home" className="text-sm font-medium text-primary">
-            Monthly Schedule
-          </a>
-        </div>
+        <ul className="divide-y divide-border mt-3">
       </div>
     </div>
   );
