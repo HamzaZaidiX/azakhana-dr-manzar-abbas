@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <div>
             <a href="#home">
-              <h1 className="text-4xl font-semibold md:text-4xl dark:text-islamic-gold text-islamic-white hover:scale-105 hover:text-islamic-green dark:hover:text-islamic-red transition-colors urdu-text text-center justify-center">
+              <h1 className="text-2xl whitespace-nowrap font-semibold md:text-4xl dark:text-islamic-gold text-islamic-white hover:scale-105 hover:text-islamic-green dark:hover:text-islamic-red transition-colors urdu-text text-center justify-center">
                 عزاخانہ ڈاکٹر منظر عباس
               </h1>
             </a>
@@ -83,3 +83,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
