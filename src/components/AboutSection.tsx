@@ -46,7 +46,7 @@ const AboutSection = () => {
 
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2">
-            <div className="relative w-[500px] h-[600px] mx-auto group overflow-hidden ">
+            <div className="relative w-[500px] h-[600px] mx-auto group overflow-hidden select-none cursor-default">
               {aboutImages.map((image, index) => (
                 <div
                   key={index}
@@ -163,3 +163,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
