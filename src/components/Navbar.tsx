@@ -70,7 +70,7 @@ const Navbar = () => {
             href="/"
             className="dark:text-islamic-gold text-islamic-black hover:scale-105 hover:text-islamic-green transition-colors"
           >
-            <h1 className="text-2xl font-semibold md:text-4xl dark:text-[#d43434] text-islamic-black hover:scale-105 hover:text-islamic-green dark:text-islamic-gold dark:hover:text-islamic-red transition-colors urdu-text">
+            <h1 className="text-xl sm:text-2xl font-semibold md:text-4xl dark:text-[#d43434] text-islamic-black hover:scale-105 hover:text-islamic-green dark:text-islamic-gold dark:hover:text-islamic-red transition-colors urdu-text">
               عزاخانہ ڈاکٹر منظر عباس
             </h1>
           </a>
@@ -104,5 +104,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
