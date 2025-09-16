@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-sm shadow-md select-none cursor-default",
+        "sticky top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-sm shadow-md select-none cursor-default",
         scrolled
           ? "backdrop-blur-md bg-white/10 dark:bg-islamic-black/30 py-3"
           : "bg-transparent py-3 shadow-md"
@@ -109,3 +109,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
